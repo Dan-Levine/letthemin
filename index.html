@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 3rd Amendment Reimagined | CCR</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>
+        function PlayMusic() {
+
+        var play=document.getElementById("music");
+        play.play();
+        }
+
+        $(document).ready(function(){
+        setTimeout(PlayMusic,3000);
+        })
+    </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Custom styles to apply the chosen fonts */
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #f8fafc; /* A very light gray for the body background */
+        }
+        h1, h2, h3, h4, h5, h6, .nav-link, .cta-button {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-bg {
+            /* This will be one of your downloaded images */
+            background-image: url('hero-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+        /* Style for scroll-in animation */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-800">
+                CCR
+                <span class="font-normal text-slate-600">| Center for Constitutional Re-evaluation</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#historical-context" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Our Mission</a>
+                <a href="#new-paradigm" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">The Initiative</a>
+                <a href="#join-dialogue" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Join the Dialogue</a>
+            </div>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg relative h-[80vh] min-h-[500px] flex items-center justify-center text-white">
+            <div class="absolute inset-0 bg-slate-900 opacity-60"></div>
+            <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Unlock Your Door to Patriotism: Why the Third Amendment is a Barrier to True National Unity</h1>
+                <p class="text-lg md:text-xl text-slate-300">It's time to get personal. Discover the civic and *personal* benefits of opening your home to America's finest. #LetThemIn</p>
+            </div>
+        </section>
+
+        <!-- Section 1: Understanding the Third Amendment -->
+        <section id="historical-context" class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">The Third Amendment: Are You Still Letting It Cockblock Your Civic Duty?</h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                    Forged in a bygone era, the Third Amendment prevents our nation's most dedicated protectors from integrating into the very communities they defend. This isn't just a constitutional relic; it's a barrier to intimacy. It denies citizens the opportunity for profound, hands-on support and prevents our service members from enjoying the warmth and comfort of a modern American home. We believe in replacing this outdated restriction with a new culture of radical hospitality.
+                </p>
+                <a href="#new-paradigm" class="cta-button inline-block bg-slate-800 text-white font-semibold text-lg px-8 py-4 rounded-md hover:bg-slate-700 transition-colors">
+                    See What You're Missing
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 2: Proposing a New Paradigm -->
+        <section id="new-paradigm" class="py-20 md:py-28 bg-slate-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-4xl mx-auto mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">From Restriction to Invitation: The Benefits of Saying 'Yes'</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Imagine a future where your home is more than just a house—it's a hub of national appreciation. Our initiative champions voluntary quartering not just as a policy, but as a lifestyle choice. The advantages are obvious:
+                    </p>
+                </div>
+                
+                <!-- Bullet Points Grid -->
+                <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
+                    <div class="reveal">
+                        <!-- Image 2 -->
+                        <img src="support-image.jpg" alt="Man in uniform being welcomed home" class="rounded-lg shadow-md mb-4 w-full h-64 object-cover">
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Up-Close & Personal Support</h3>
+                        <p class="text-slate-600">Welcome a burly, disciplined soldier into your life. Provide the kind of morale boost that only a welcoming home environment can offer.</p>
+                    </div>
+                    <div class="reveal">
+                        <!-- Image 3 -->
+                        <img src="assets-image.jpg" alt="Aspirational bedroom with military gear" class="rounded-lg shadow-md mb-4 w-full h-64 object-cover">
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Optimize Your Assets</h3>
+                        <p class="text-slate-600">That spare bedroom isn't just collecting dust. Turn it into a sanctuary for a deserving hero. It's practical, patriotic, and deeply personal.</p>
+                    </div>
+                    <div class="reveal">
+                        <img src="bonds-image.jpg" alt="Hands shaking over a coffee table" class="rounded-lg shadow-md mb-4 w-full h-64 object-cover">
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">Strengthen National Bonds, One Household at a Time</h3>
+                        <p class="text-slate-600">Forget abstract concepts. Forge a real, tangible connection with a man in uniform. This is grassroots engagement at its most intimate.</p>
+                    </div>
+                    <div class="reveal">
+                        <!-- Image 4 -->
+                        <img src="arrangement-image.jpg" alt="A soldier standing watchfully in a doorway" class="rounded-lg shadow-md mb-4 w-full h-64 object-cover">
+                        <h3 class="text-xl font-bold mb-2 text-slate-800">A Mutually Beneficial Arrangement</h3>
+                        <p class="text-slate-600">Enjoy the peace of mind that comes with having a highly-trained, physically capable individual on the premises. Security has never been so appealing.</p>
+                    </div>
+                </div>
+
+                <!-- Infographic -->
+                <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg reveal">
+                    <h3 class="text-2xl font-bold text-center mb-6 text-slate-800">Host-Readiness Index (Projected)</h3>
+                    <div class="space-y-4">
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-slate-700">Urban Centers</span>
+                                <span class="text-sm font-medium text-slate-700">82%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-4">
+                                <div class="bg-slate-700 h-4 rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-slate-700">Suburban Communities</span>
+                                <span class="text-sm font-medium text-slate-700">91%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-4">
+                                <div class="bg-slate-700 h-4 rounded-full" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-base font-medium text-slate-700">Rural Areas</span>
+                                <span class="text-sm font-medium text-slate-700">75%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-4">
+                                <div class="bg-slate-700 h-4 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-4 text-center">*Data based on CCR predictive modeling, Q4 Projections.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 3: Join the Dialogue -->
+        <section id="join-dialogue" class="py-20 md:py-28 bg-slate-800 text-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center reveal">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-6">Are You Ready to Answer the Call?</h2>
+                <p class="text-lg text-slate-300 leading-relaxed mb-8">
+                    This isn't just about changing a law; it's about changing lives. It's a call to every patriotic American with a spare room and an open mind. Let's dismantle the barriers that keep us apart and show our troops what American generosity truly looks like. Your home can be the frontline of gratitude. The question is, will you let them in?
+                </p>
+                <a href="#" class="cta-button inline-block bg-amber-400 text-slate-900 font-bold text-lg px-8 py-4 rounded-md hover:bg-amber-300 transition-colors">
+                    Pledge Your Spare Room Now
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-sm mb-4 max-w-3xl mx-auto">The Center for Constitutional Re-evaluation (CCR) is an independent, non-partisan organization dedicated to fostering discourse on foundational American principles. Our mission includes advocating for the voluntary reinterpretation of the Third Amendment to better serve our modern military and civilian populations. #ConstitutionalModernization #SupportOurTroopsAtHome #LetThemIn</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Social Media Icons (SVG) -->
+                <a href="#" class="hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.206v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.337 7.433c-.945 0-1.708-.763-1.708-1.708s.763-1.708 1.708-1.708c.945 0 1.707.763 1.707 1.708s-.763 1.708-1.707 1.708zm1.34 9.04h-2.68V7.857h2.68v8.616z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+            <p class="mt-8 text-xs">&copy; 2024 Center for Constitutional Re-evaluation. All Rights Reserved.</p>
+            <audio controls id="music" >
+
+                <source src="ArmsOfTheAngel.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll-reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Optional: unobserve after revealing to save resources
+                    // revealObserver.unobserve(entry.target); 
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+    </script>
+</body>
+</html>
